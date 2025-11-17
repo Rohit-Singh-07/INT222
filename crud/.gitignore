@@ -1,0 +1,59 @@
+# Node modules
+/node_modules/
+
+# Output build folders
+/dist/
+/build/
+/out/
+
+# Env files
+.env
+.env.local
+.env.*      # except template
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+debug.log
+logs/
+*.log
+
+# pnpm store
+.pnpm-store/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Coverage
+coverage/
+.nyc_output/
+
+# IDE / OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# PM2 Logs
+~/.pm2/logs/
+~/.pm2/pids/
+pm2.log
+pm2.pid
+
+# Cache folders
+.cache/
+temp/
+tmp/
+
+# Compiled JS in src (if ever created accidentally)
+src/**/*.js
+src/**/*.js.map
+
+# Misc
+*.local
+*.pid
+*.seed
