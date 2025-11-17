@@ -1,55 +1,58 @@
-# Node modules
-/node_modules/
 
-# Output build folders
-/dist/
-/build/
-/out/
+# Node / Package Managers
+node_modules/
+.pnpm-store/
+.pnpm/
 
-# Env files
-.env
-.env.local
-.env.*      # except template
-!.env.example
-
-# Logs
+# PNPM debug logs
+pnpm-debug.log*
 npm-debug.log*
 yarn-debug.log*
-pnpm-debug.log*
 debug.log
-logs/
-*.log
 
-# pnpm store
-.pnpm-store/
+# Environment Files
+.env
+.env.local
+.env.*.local
+.env.*          # except template
+!.env.example
 
-# TypeScript
+# Build Output
+dist/
+build/
+out/
+
+# Typescript
 *.tsbuildinfo
 tsconfig.tsbuildinfo
+
+# Logs
+logs/
+*.log
 
 # Coverage
 coverage/
 .nyc_output/
 
-# IDE / OS files
-.vscode/
-.idea/
-*.swp
+# OS / Editor Garbage
 .DS_Store
 Thumbs.db
+*.swp
+.vscode/
+.idea/
 
-# PM2 Logs
-~/.pm2/logs/
-~/.pm2/pids/
+# PM2
 pm2.log
 pm2.pid
+~/.pm2/logs/
+~/.pm2/pids/
 
-# Cache folders
+# Cache / Temp
 .cache/
-temp/
 tmp/
+temp/
 
-# Compiled JS in src (if ever created accidentally)
+# Safety — accidental JS output inside src
 src/**/*.js
 src/**/*.js.map
 
